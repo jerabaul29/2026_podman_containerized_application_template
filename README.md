@@ -1,0 +1,2 @@
+# 2026_podman_containerized_application_template
+A podman containerized template for running applications
