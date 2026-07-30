@@ -18,6 +18,8 @@ While relatively well isolated, this is less isolated than a full VM, but also m
 
 This repository is not a full solution - rather a "starting point framework" I use when podman containerizing my apps. Each app I containerize this way then needs its own separate github repository that uses this repository as a starting point.
 
+I considered alternatives, like the nix package manager. However, I want a solution that can be run on any linux machine that supports bash and Containerfile based tools like podman, so I end up writing my own solution. I acknowledge though that it is hard to find the right cut between using low level widely available tools alone, and leveraging things built on top of these - doing it the way I do here may be wrong of me and there may be a better way to leverage higher level tools.
+
 ## Workflow of the containerized app
 
 - The meta information about the app to containerize is in `app_config.sh`. This defines variables, such as `APP_NAME`, `MAX_APP_IMAGE_AGE`, .

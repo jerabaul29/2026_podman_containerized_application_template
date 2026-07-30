@@ -19,3 +19,29 @@ shopt -s nullglob
 # ----------------------------------------
 
 # the bash script to be called on the first time to build the APP_NAME.sh executable and install if for the user
+
+# ----------------------------------------
+# start working :)
+
+# ----------------------------------------
+# load the config
+bash ./app_config.sh
+
+# ----------------------------------------
+# copy the template into the right .sh app file
+cp ./APP_NAME_TEMPLATE.sh ${APP_NAME}.sh
+
+# ----------------------------------------
+# prepare the persisting folder and populate it as needed
+
+# ----------------------------------------
+# fill in the necessary fields in the .sh app file
+# - path to persistent data
+# - image name to use
+# - config for rebuilding frequency
+
+# ----------------------------------------
+# copy and make executable the .sh app file
+
+# ----------------------------------------
+# all good :)
